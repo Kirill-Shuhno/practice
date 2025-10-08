@@ -1,5 +1,3 @@
-N = int(input())
-hours = (N // 3600) % 24
-minutes = (N % 3600) // 60
-seconds = N % 60
-print('{}:{:02}:{:02}'.format(hours, minutes, seconds))
+a = int(input())
+b = int(input())
+print("YES" if a % b == 0 else "NO")

@@ -1,13 +1,5 @@
-x1 = int(input())
-y1 = int(input())
-x2 = int(input())
-y2 = int(input())
-
-color1 = "White" if (x1 + y1) % 2 == 0 else "Black"
-color2 = "White" if (x2 + y2) % 2 == 0 else "Black"
-
-if color1 == color2:
-    print("YES")
-    print(color1)
-else:
-    print("NO")
+N = int(input())
+hours = (N // 3600) % 24
+minutes = (N % 3600) // 60
+seconds = N % 60
+print('{}:{:02}:{:02}'.format(hours, minutes, seconds))
